@@ -1,111 +1,82 @@
-/* Reset básico */
-* {
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #e0f0ff;
+  color: #222;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #e0f0ff, #f7fbff);
-  color: #333;
-  line-height: 1.6;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #0b57d0;
-  color: #fff;
-  padding: 20px 40px;
-  border-radius: 12px;
   text-align: center;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
 }
 
 header h1 {
-  font-size: 2.2em;
+  color: #0b57d0;
   margin-bottom: 5px;
 }
 
 header p {
   font-size: 1.1em;
-  opacity: 0.85;
+  color: #1550a0;
 }
 
-/* Menu de navegação */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
-nav a {
+.nav-link {
+  display: inline-block;
+  margin: 0 10px;
   text-decoration: none;
   color: #0b57d0;
   font-weight: bold;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: background 0.3s, color 0.3s;
 }
 
-nav a:hover {
-  background-color: #0b57d0;
+.nav-link:hover {
+  background: #0b57d0;
   color: #fff;
 }
 
-/* Conteúdo das páginas */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+main .content-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-h2 {
+main h2, main h3 {
   color: #0b57d0;
-  margin-bottom: 20px;
 }
 
-h3 {
-  color: #218c4b;
-  margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 15px;
-  font-size: 1.05em;
-}
-
-/* Listas */
 ul {
-  list-style: disc inside;
-  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 20px;
 }
 
-li {
-  margin-bottom: 8px;
-}
-
-/* Destaques de código/terminal */
 pre {
-  background-color: #eaf4ff;
-  border-left: 5px solid #0b57d0;
-  padding: 15px;
-  border-radius: 8px;
+  background: #ecf4fb;
+  color: #153530;
+  padding: 14px 12px;
+  border-radius: 7px;
+  text-align: left;
   overflow-x: auto;
-  font-family: monospace;
-  margin-bottom: 20px;
 }
 
-/* Rodapé */
 footer {
   text-align: center;
   margin-top: 40px;
-  color: #555;
-  font-size: 0.9em;
+  padding: 20px 0;
+  color: #1550a0;
 }

@@ -3,51 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Mini Site Docker - Empresas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Uso de Docker em Empresas</h1>
-    <p>Como grandes empresas aplicam conteinerização na prática</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Uso de Docker em Empresas</h1>
+      <p>Como grandes empresas aplicam conteinerização na prática</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="conceitos.html">Conceitos</a>
-    <a href="vantagens.html">Vantagens</a>
-    <a href="empresas.html">Empresas</a>
-  </nav>
+    <nav>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="conceitos.html">Conceitos</a>
+      <a class="nav-link" href="vantagens.html">Vantagens</a>
+      <a class="nav-link" href="empresas.html">Empresas</a>
+    </nav>
 
-  <main>
-    <h2>Docker no mundo corporativo</h2>
-    <p>Docker revolucionou a forma como as empresas desenvolvem, testam e entregam software, permitindo mais rapidez, consistência e eficiência nos processos.</p>
+    <main>
+      <div class="content-box">
+        <h2>Docker no mundo corporativo</h2>
+        <p>Docker revolucionou a forma como as empresas desenvolvem, testam e entregam software, permitindo mais rapidez, consistência e eficiência nos processos.</p>
 
-    <h3>Exemplos de uso:</h3>
-    <ul>
-      <li><b>Netflix:</b> Escala milhões de containers para entregar streaming de forma confiável.</li>
-      <li><b>Spotify:</b> Isola serviços em containers para desenvolvimento ágil e deploy contínuo.</li>
-      <li><b>Airbnb:</b> Padroniza ambientes de desenvolvimento e produção com Docker Compose.</li>
-      <li><b>PayPal:</b> Usa containers para melhorar a integração contínua e reduzir downtime.</li>
-    </ul>
+        <h3>Exemplos de uso:</h3>
+        <ul>
+          <li><b>Netflix:</b> Escala milhões de containers para entregar streaming de forma confiável.</li>
+          <li><b>Spotify:</b> Isola serviços em containers para desenvolvimento ágil e deploy contínuo.</li>
+          <li><b>Airbnb:</b> Padroniza ambientes de desenvolvimento e produção com Docker Compose.</li>
+          <li><b>PayPal:</b> Usa containers para melhorar a integração contínua e reduzir downtime.</li>
+        </ul>
 
-    <h3>Boas práticas em empresas:</h3>
-    <ul>
-      <li>Utilizar imagens oficiais ou bem construídas.</li>
-      <li>Manter containers pequenos e especializados (microservices).</li>
-      <li>Automatizar testes e deploys com CI/CD (GitHub Actions, Jenkins, etc.).</li>
-      <li>Monitorar containers em produção (logs, métricas, alertas).</li>
-    </ul>
+        <h3>Boas práticas em empresas:</h3>
+        <ul>
+          <li>Utilizar imagens oficiais ou bem construídas.</li>
+          <li>Manter containers pequenos e especializados (microservices).</li>
+          <li>Automatizar testes e deploys com CI/CD (GitHub Actions, Jenkins, etc.).</li>
+          <li>Monitorar containers em produção (logs, métricas, alertas).</li>
+        </ul>
 
-    <h3>Exemplo prático:</h3>
-    <pre>
+        <h3>Exemplo prático:</h3>
+        <pre>
 # Rodando múltiplos serviços isolados em containers
 docker run -d --name web nginx
 docker run -d --name banco mysql
-    </pre>
-  </main>
+        </pre>
+      </div>
+    </main>
 
-  <footer>
-    &copy; 2025 Vitoria - Mini Site Docker
-  </footer>
+    <footer>
+      &copy; 2025 Vitoria - Mini Site Docker
+    </footer>
+  </div>
 </body>
 </html>
