@@ -6,42 +6,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Conceitos de Docker</h1>
-    <p>Entenda o básico antes de colocar containers em produção</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Conceitos de Docker</h1>
+      <p>Entenda o básico antes de colocar containers em produção</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="conceitos.html">Conceitos</a>
-    <a href="vantagens.html">Vantagens</a>
-  </nav>
+    <nav>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="conceitos.html">Conceitos</a>
+      <a class="nav-link" href="vantagens.html">Vantagens</a>
+      <a class="nav-link" href="empresas.html">Empresas</a>
+    </nav>
 
-  <main>
-    <h2>O que é Docker?</h2>
-    <p>Docker é uma plataforma que permite criar, gerenciar e executar aplicações em containers isolados. Um container é uma unidade leve, portátil e consistente que empacota código, runtime, bibliotecas e dependências.</p>
+    <main>
+      <div class="content-box">
+        <h2>O que é Docker?</h2>
+        <p>Docker é uma plataforma que permite criar, gerenciar e executar aplicações em containers isolados. Um container é uma unidade leve, portátil e consistente que empacota código, runtime, bibliotecas e dependências.</p>
 
-    <h3>Diferença entre container e máquina virtual:</h3>
-    <ul>
-      <li>Containers compartilham o mesmo kernel do sistema operacional, tornando-os mais leves.</li>
-      <li>Máquinas virtuais incluem sistema operacional completo, consumindo mais recursos.</li>
-    </ul>
+        <h3>Diferença entre container e máquina virtual:</h3>
+        <ul>
+          <li>Containers compartilham o mesmo kernel do sistema operacional, tornando-os mais leves.</li>
+          <li>Máquinas virtuais incluem sistema operacional completo, consumindo mais recursos.</li>
+        </ul>
 
-    <h3>Componentes principais do Docker:</h3>
-    <ul>
-      <li><b>Docker Engine:</b> Motor que cria e executa containers.</li>
-      <li><b>Docker Hub:</b> Repositório de imagens públicas e privadas.</li>
-      <li><b>Dockerfile:</b> Arquivo de instruções para criar imagens personalizadas.</li>
-    </ul>
+        <h3>Componentes principais do Docker:</h3>
+        <ul>
+          <li><b>Docker Engine:</b> Motor que cria e executa containers.</li>
+          <li><b>Docker Hub:</b> Repositório de imagens públicas e privadas.</li>
+          <li><b>Dockerfile:</b> Arquivo de instruções para criar imagens personalizadas.</li>
+        </ul>
 
-    <pre>
+        <h3>Exemplo prático:</h3>
+        <pre>
 # Criando uma imagem personalizada a partir de um Dockerfile
 docker build -t minha-imagem .
-    </pre>
-  </main>
+        </pre>
+      </div>
+    </main>
 
-  <footer>
-    &copy; 2025 Vitoria - Mini Site Docker
-  </footer>
+    <footer>
+      &copy; 2025 Vitoria - Mini Site Docker
+    </footer>
+  </div>
 </body>
 </html>

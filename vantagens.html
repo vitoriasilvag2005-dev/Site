@@ -6,36 +6,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Vantagens da Conteinerização</h1>
-    <p>Por que Docker é tão popular entre desenvolvedores e empresas</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Vantagens da Conteinerização</h1>
+      <p>Por que Docker é tão popular entre desenvolvedores e empresas</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="conceitos.html">Conceitos</a>
-    <a href="vantagens.html">Vantagens</a>
-  </nav>
+    <nav>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="conceitos.html">Conceitos</a>
+      <a class="nav-link" href="vantagens.html">Vantagens</a>
+      <a class="nav-link" href="empresas.html">Empresas</a>
+    </nav>
 
-  <main>
-    <h2>Benefícios do Docker:</h2>
-    <ul>
-      <li><b>Portabilidade:</b> Executa em qualquer lugar que tenha Docker.</li>
-      <li><b>Consistência:</b> O mesmo container roda em dev, teste e produção.</li>
-      <li><b>Eficiência:</b> Mais leve que máquinas virtuais, consumindo menos recursos.</li>
-      <li><b>Escalabilidade:</b> Fácil criar múltiplos containers da mesma aplicação.</li>
-      <li><b>Isolamento:</b> Cada container é isolado, evitando conflitos entre apps.</li>
-    </ul>
+    <main>
+      <div class="content-box">
+        <h2>Benefícios do Docker:</h2>
+        <ul>
+          <li><b>Portabilidade:</b> Executa em qualquer lugar que tenha Docker.</li>
+          <li><b>Consistência:</b> O mesmo container roda em dev, teste e produção.</li>
+          <li><b>Eficiência:</b> Mais leve que máquinas virtuais, consumindo menos recursos.</li>
+          <li><b>Escalabilidade:</b> Fácil criar múltiplos containers da mesma aplicação.</li>
+          <li><b>Isolamento:</b> Cada container é isolado, evitando conflitos entre apps.</li>
+        </ul>
 
-    <h3>Exemplo prático:</h3>
-    <pre>
+        <h3>Exemplo prático:</h3>
+        <pre>
 # Rodando um servidor Nginx em um container
 docker run -d -p 8080:80 nginx
-    </pre>
-  </main>
+        </pre>
+      </div>
+    </main>
 
-  <footer>
-    &copy; 2025 Vitoria - Mini Site Docker
-  </footer>
+    <footer>
+      &copy; 2025 Vitoria - Mini Site Docker
+    </footer>
+  </div>
 </body>
 </html>

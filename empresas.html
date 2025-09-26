@@ -1,58 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Mini Site Docker - Empresas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Uso de Docker em Empresas</h1>
-      <p>Como grandes empresas aplicam conteinerização na prática</p>
-    </header>
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #e0f0ff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
 
-    <nav>
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="conceitos.html">Conceitos</a>
-      <a class="nav-link" href="vantagens.html">Vantagens</a>
-      <a class="nav-link" href="empresas.html">Empresas</a>
-    </nav>
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    <main>
-      <div class="content-box">
-        <h2>Docker no mundo corporativo</h2>
-        <p>Docker revolucionou a forma como as empresas desenvolvem, testam e entregam software, permitindo mais rapidez, consistência e eficiência nos processos.</p>
+header {
+  text-align: center;
+  padding: 20px 0;
+}
 
-        <h3>Exemplos de uso:</h3>
-        <ul>
-          <li><b>Netflix:</b> Escala milhões de containers para entregar streaming de forma confiável.</li>
-          <li><b>Spotify:</b> Isola serviços em containers para desenvolvimento ágil e deploy contínuo.</li>
-          <li><b>Airbnb:</b> Padroniza ambientes de desenvolvimento e produção com Docker Compose.</li>
-          <li><b>PayPal:</b> Usa containers para melhorar a integração contínua e reduzir downtime.</li>
-        </ul>
+header h1 {
+  color: #0b57d0;
+  margin-bottom: 5px;
+}
 
-        <h3>Boas práticas em empresas:</h3>
-        <ul>
-          <li>Utilizar imagens oficiais ou bem construídas.</li>
-          <li>Manter containers pequenos e especializados (microservices).</li>
-          <li>Automatizar testes e deploys com CI/CD (GitHub Actions, Jenkins, etc.).</li>
-          <li>Monitorar containers em produção (logs, métricas, alertas).</li>
-        </ul>
+header p {
+  font-size: 1.1em;
+  color: #1550a0;
+}
 
-        <h3>Exemplo prático:</h3>
-        <pre>
-# Rodando múltiplos serviços isolados em containers
-docker run -d --name web nginx
-docker run -d --name banco mysql
-        </pre>
-      </div>
-    </main>
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    <footer>
-      &copy; 2025 Vitoria - Mini Site Docker
-    </footer>
-  </div>
-</body>
-</html>
+.nav-link {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0b57d0;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background: #0b57d0;
+  color: #fff;
+}
+
+main .content-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+main h2, main h3 {
+  color: #0b57d0;
+}
+
+ul {
+  text-align: left;
+  margin-left: 20px;
+}
+
+pre {
+  background: #ecf4fb;
+  color: #153530;
+  padding: 14px 12px;
+  border-radius: 7px;
+  text-align: left;
+  overflow-x: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: #1550a0;
+}
