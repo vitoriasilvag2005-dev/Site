@@ -1,8 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Conceitos</title><link rel="stylesheet" href="style.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Conceitos - Docker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header><nav><a href="index.html">Home</a> | <a href="conceitos.html">Conceitos</a> | <a href="vantagens.html">Vantagens</a></nav></header>
-<main><h1>Conceitos de Docker</h1><p>Docker é uma plataforma de containers que permite empacotar aplicações de forma portátil.</p></main>
-<footer><p>Feito por Vitória</p></footer>
-</body></html>
+<div class="container">
+    <header>
+        <h1>Conceitos de Docker</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="conceitos.html">Conceitos</a>
+        <a href="vantagens.html">Vantagens</a>
+    </nav>
+    <main>
+        <h2>Containers</h2>
+        <p>Um container é como uma pequena caixa isolada onde sua aplicação roda com tudo que precisa 
+        (bibliotecas, dependências), sem interferir no restante do sistema.</p>
+        
+        <h2>Imagens</h2>
+        <p>Imagens Docker são como “modelos” de containers. Você cria o container a partir de uma imagem, 
+        garantindo consistência.</p>
+        
+        <h2>Dockerfile</h2>
+        <p>O Dockerfile é um arquivo de instruções que define como a imagem deve ser construída. Exemplo:</p>
+        <pre>
+FROM nginx:alpine
+COPY *.html /usr/share/nginx/html/
+COPY style.css /usr/share/nginx/html/
+EXPOSE 80
+        </pre>
+    </main>
+    <footer>
+        &copy; 2025 Mini Site Docker
+    </footer>
+</div>
+</body>
+</html>
