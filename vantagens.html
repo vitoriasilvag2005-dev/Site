@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Vantagens - Docker</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Mini Site Docker - Vantagens</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>Vantagens do Docker</h1>
-    </header>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="conceitos.html">Conceitos</a>
-        <a href="vantagens.html">Vantagens</a>
-    </nav>
-    <main>
-        <h2>Portabilidade</h2>
-        <p>Os containers funcionam igual em qualquer sistema operacional ou ambiente de nuvem.</p>
+  <header>
+    <h1>Vantagens da Conteinerização</h1>
+    <p>Por que Docker é tão popular entre desenvolvedores e empresas</p>
+  </header>
 
-        <h2>Isolamento</h2>
-        <p>Cada container é isolado, evitando conflitos entre aplicativos e bibliotecas.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="conceitos.html">Conceitos</a>
+    <a href="vantagens.html">Vantagens</a>
+  </nav>
 
-        <h2>Escalabilidade</h2>
-        <p>É fácil replicar containers para aumentar a capacidade de serviços rapidamente.</p>
+  <main>
+    <h2>Benefícios do Docker:</h2>
+    <ul>
+      <li><b>Portabilidade:</b> Executa em qualquer lugar que tenha Docker.</li>
+      <li><b>Consistência:</b> O mesmo container roda em dev, teste e produção.</li>
+      <li><b>Eficiência:</b> Mais leve que máquinas virtuais, consumindo menos recursos.</li>
+      <li><b>Escalabilidade:</b> Fácil criar múltiplos containers da mesma aplicação.</li>
+      <li><b>Isolamento:</b> Cada container é isolado, evitando conflitos entre apps.</li>
+    </ul>
 
-        <h2>Rapidez</h2>
-        <p>Containers iniciam quase instantaneamente, diferente de máquinas virtuais tradicionais.</p>
-    </main>
-    <footer>
-        &copy; 2025 Mini Site Docker
-    </footer>
-</div>
+    <h3>Exemplo prático:</h3>
+    <pre>
+# Rodando um servidor Nginx em um container
+docker run -d -p 8080:80 nginx
+    </pre>
+  </main>
+
+  <footer>
+    &copy; 2025 Vitoria - Mini Site Docker
+  </footer>
 </body>
 </html>
