@@ -2,44 +2,31 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Relatório GitHub Actions</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-    body {font-family: 'Inter', Arial, sans-serif; background: #f7faff; color: #222; margin:0; padding:40px;}
-    .relatorio {background: #fff; border-radius: 14px; box-shadow: 0 2px 16px #d0e4fb40; max-width: 650px; margin: 0 auto; padding: 32px;}
-    h2 {color: #0b57d0;}
-    h3 {color: #3762bc;}
-    pre {background: #ecf4fb; color: #153530; padding: 14px 12px; border-radius: 7px; overflow-x:auto;}
-    .status {font-size:1.09em;}
-    .tentativas {margin-top:18px;}
-    ul {margin-left:1.5em;}
-    .erro {color: #b52e23;}
-    .sucesso {color: #218c4b;}
-  </style>
+  <title>O que é Docker?</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="relatorio">
-  <h2>Relatório do Build Automático (GitHub Actions)</h2>
-  <p class="status"><b>Status:</b> <span class="sucesso">Sucesso</span></p>
+  <header>
+    <h1>Mini Site sobre Docker</h1>
+    <nav>
+      <a href="index.html">O que é Docker?</a>
+      <a href="empresas.html">Por que empresas usam?</a>
+      <a href="vantagens.html">Vantagens</a>
+    </nav>
+  </header>
 
-  <h3>Log Principal:</h3>
-  <pre>
-#0 building with "default" instance using docker driver
-#1 [internal] load build definition from Dockerfile
-#7 [2/3] COPY *.html /usr/share/nginx/html/
-#8 [3/3] COPY style.css /usr/share/nginx/html/
-#9 exporting to image
-#9 naming to docker.io/library/teste-mini-site done
-#9 DONE 0.7s
-  </pre>
+  <main>
+    <h2>O que é Docker?</h2>
+    <p>Docker é uma plataforma que permite criar, distribuir e executar aplicações dentro de <strong>containers</strong>. 
+    Um container é como uma "caixinha" isolada que contém tudo o que a aplicação precisa para rodar, 
+    incluindo código, bibliotecas e dependências.</p>
 
-  <div class="tentativas">
-    <h3>Resumo das tentativas de correção:</h3>
-    <ul>
-      <li>Commit inicial: Workflow configurado e build do Dockerfile realizado com sucesso.</li>
-    </ul>
-  </div>
-</div>
+    <p>Isso garante que a aplicação funcione da mesma forma em qualquer lugar: no seu computador, 
+    no servidor da empresa ou na nuvem.</p>
+
+    <h3>Exemplo rápido:</h3>
+    <p>Imagine que você tem um site que precisa de uma versão específica do Python. Com Docker, você cria um container 
+    que já vem com essa versão do Python instalada, evitando conflitos com outras aplicações.</p>
+  </main>
 </body>
 </html>
-
