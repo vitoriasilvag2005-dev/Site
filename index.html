@@ -2,31 +2,41 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>O que é Docker?</title>
+  <title>Mini Site Docker - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Mini Site sobre Docker</h1>
-    <nav>
-      <a href="index.html">O que é Docker?</a>
-      <a href="empresas.html">Por que empresas usam?</a>
-      <a href="vantagens.html">Vantagens</a>
-    </nav>
+    <h1>Mini Site Docker</h1>
+    <p>Aprenda Docker e Conteinerização de forma fácil!</p>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="conceitos.html">Conceitos</a>
+    <a href="vantagens.html">Vantagens</a>
+  </nav>
+
   <main>
-    <h2>O que é Docker?</h2>
-    <p>Docker é uma plataforma que permite criar, distribuir e executar aplicações dentro de <strong>containers</strong>. 
-    Um container é como uma "caixinha" isolada que contém tudo o que a aplicação precisa para rodar, 
-    incluindo código, bibliotecas e dependências.</p>
+    <h2>Bem-vindo ao Mini Site Docker!</h2>
+    <p>Este site apresenta conceitos básicos de Docker e conteinerização, com exemplos práticos e explicativos.</p>
 
-    <p>Isso garante que a aplicação funcione da mesma forma em qualquer lugar: no seu computador, 
-    no servidor da empresa ou na nuvem.</p>
+    <h3>O que você vai aprender aqui:</h3>
+    <ul>
+      <li>O que é Docker</li>
+      <li>Por que empresas usam containers</li>
+      <li>Principais vantagens da conteinerização</li>
+      <li>Como executar um container básico</li>
+    </ul>
 
-    <h3>Exemplo rápido:</h3>
-    <p>Imagine que você tem um site que precisa de uma versão específica do Python. Com Docker, você cria um container 
-    que já vem com essa versão do Python instalada, evitando conflitos com outras aplicações.</p>
+    <pre>
+# Exemplo: Rodando um container "Hello World"
+docker run hello-world
+    </pre>
   </main>
+
+  <footer>
+    &copy; 2025 Vitoria - Mini Site Docker
+  </footer>
 </body>
 </html>
