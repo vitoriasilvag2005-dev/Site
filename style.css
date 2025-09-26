@@ -1,5 +1,88 @@
-body {font-family: Arial, sans-serif; margin: 0; padding: 0;}
-header {background: #004466; color: white; padding: 1em;}
-nav a {color: white; text-decoration: none; margin: 0 1em;}
-main {padding: 1em;}
-footer {background: #f0f0f0; text-align: center; padding: 1em; margin-top: 2em;}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+  background: #e0f7fa;
+  color: #01579b;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+header p {
+  color: #0277bd;
+}
+
+/* Menu de navegação */
+nav {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #01579b;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #0288d1;
+  color: white;
+}
+
+/* Títulos e parágrafos */
+h2 {
+  color: #0277bd;
+  margin-bottom: 12px;
+}
+
+p, li {
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #01579b;
+  font-size: 0.9rem;
+}
+
+/* Código e pre */
+pre {
+  background: #b3e5fc;
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
