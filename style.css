@@ -1,25 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-header {
-  background: #004666;
-  color: white;
-  padding: 1em;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1em;
-}
-main {
-  padding: 1em;
-}
-footer {
-  text-align: center;
-  margin-top: 2em;
-  padding: 1em;
-  background: #f0f0f0;
-}
+body {font-family: Arial, sans-serif; margin: 0; padding: 0;}
+header {background: #004466; color: white; padding: 1em;}
+nav a {color: white; text-decoration: none; margin: 0 1em;}
+main {padding: 1em;}
+footer {background: #f0f0f0; text-align: center; padding: 1em; margin-top: 2em;}
